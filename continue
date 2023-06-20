@@ -1,0 +1,40 @@
+// Ten program oblicza opłaty za
+// wypożyczenie płyt DVD
+// Co trzecia płyta jest za darmo.
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    
+    int dvdCount = 1; // Licznik płyt
+    int numDVD;       // Liczba wypożyczonych płyt
+    double total = 0.0;
+    char current;  // Wydano w tym roku.T lub N.
+    
+    // Pobranie liczby płyt
+    cout << "Ile płyt ma zostać wypożyczonych? ";
+    cin >> numDVD;
+    
+    do
+    {
+        if ((dvdCount % 3) == 0)
+        {
+            cout << "DVD #" << dvdCount << " jest darmowe!\n";
+            continue;  // przejście do while
+        }
+        cout << "Czy DVD #" << dvdCount;
+        cout << " zostało wydane w tym roku? (T/N)";
+        cin >> current;
+        if (current == 'T' || current == 't')
+            total += 3.50;
+        else
+            total += 2.50;
+    } while (dvdCount++ < numDVD);
+    
+    //Wyświetlenie sumy
+    cout << fixed << showpoint << setprecision(2);
+    cout << "Całkowita opłata wynosi " << total << " zł." << endl;
+
+    return 0;
+}
