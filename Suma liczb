@@ -1,0 +1,38 @@
+
+// Zadanie 1.  Suma liczb
+
+// Napisz program, który prosi użytkownika o wpisanie
+// dodatniej liczby całkowitej. Program powinien używać 
+// pętli, aby otrzymać sumę wszystkich liczb całkowitych
+// od 1 aż do wprowadzonej liczby. Jeżeli użytkownik wprowadzi
+// na przykład 50, pętla powinna obliczyć sumę 1,2,3,4,...,50.
+
+// Weryfikacja poprawności wprowadzanych danych: nie akceptuj 
+// wartości ujemnych.
+
+/*
+
+#include <iostream>
+using namespace std; 
+
+int main() {
+    double total = 0.0;
+    int num;
+    
+    cout << "Wprowadź dodatnią liczbę całkowitą, a\n";
+    cout << "program obliczy sumę wszystkich liczb,\n";
+    cout << "od 1 do wprowadzonej liczby.\n";
+    cout << "UWAGA: Liczba tylko dodatnia\n";
+
+    cin >> num;
+    int i = 1;
+    while (i <= num) 
+    {
+        cout << i << " ";
+        i++;
+        total += i;
+    }
+    cout << total;
+    return 0;
+}
+*/
