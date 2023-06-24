@@ -1,0 +1,24 @@
+
+// Zadanie 5
+// Wzrost opłat członkowskich
+
+// Członkostwo w klubie wymaga obecie rocznej opłaty
+// w wysokości 2500 zł. Ogloszono, że oplata ta 
+// wzrośnie o 4% rocznie w przeciągu kolejnych 6 lat.
+// Napisz program, który używa pętli w celu wyświetlenia
+// przewidywanych opłat za kolejne 6 lat.
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double opłata = 2500; // Początkowa opłata
+    double wzrost_procentowy = 0.04; // Wzrost opłaty o 4% rocznie
+    for (int rok = 1; rok <= 6; ++rok) {
+        opłata *= (1 + wzrost_procentowy); // Obliczanie przewidywanej opłaty na kolejny rok
+        cout << "Rok " << rok << ": " << fixed <<setprecision(2) << opłata << " zł" << endl;
+    }
+
+    return 0;
+}
