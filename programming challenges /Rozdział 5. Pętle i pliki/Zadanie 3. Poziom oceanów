@@ -1,0 +1,28 @@
+// Zakladając, że poziom oceanów wzrasta obecnie o 1.5 milimetra na rok,
+// napisz program wyświetlający tabelę pokazującą, o ile milimetrów
+// podniesie się poziom wody w oceanach w przeciągu następnych 25 lat.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const double seaLevelRise = 1.5; 
+    double total = 0.0;
+
+    for (int i = 1; i <= 25; ++i) {
+        total += seaLevelRise;
+
+        if (i == 1)
+            cout << "Poziom za " << i << " rok,";
+        else if (i >= 2 && i <= 4)
+            cout << "Poziom za " << i << " lata,";
+        else if (i >= 5 && i <= 21)
+            cout << "Poziom za " << i << " lat,";
+        else if (i >= 22 && i <= 25)
+            cout << "Poziom za " << i << " lata,";
+
+        cout << " podniesie się o " << total << " milimetra" << std::endl;
+    }
+
+    return 0;
+}
