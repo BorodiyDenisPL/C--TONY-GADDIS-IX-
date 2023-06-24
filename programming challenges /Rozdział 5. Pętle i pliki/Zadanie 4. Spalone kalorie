@@ -1,0 +1,19 @@
+// Biegając na pewnej bieżni, spalasz 3.6 kalorii na minutę. 
+// Napisz program używający pętli dowyświetlania liczby spalonych 
+// kalorii po 5,10,15,20,25 i 30 minutach.
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    double total = 0.0;
+    const double min = 3.6;
+    for (int i = 5; i <= 30; i +=5)
+    {
+        total = i * 3.6;
+        cout << "Za " << i << " min, spalasz ";
+        cout << total << " kalorji" << endl;
+    }
+    return 0;
+}
