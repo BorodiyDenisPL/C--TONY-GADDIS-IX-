@@ -1,0 +1,21 @@
+// Sprawdzanie błądu
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+
+    ifstream inputFile;
+    inputFile.open("1.txt");
+
+    if(inputFile.fail())
+    {
+        cout << "Błąd otwarcia pliku.\n";
+    }
+    else
+    {
+        cout << "jest w porządku";
+    }
+
+    return 0;
+}
