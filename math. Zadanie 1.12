@@ -1,0 +1,45 @@
+// Zadanie 1.12 sprawdzania przez które ćwiartki układu współrzędnych 
+// przechodzi prosta y = ax + b dla wczytanych przez użytkownika a, b.
+/*
+#include <iostream>
+using namespace std;
+
+int main() {
+    int wybor = 1, a = 0, b = 0;
+    cout << "Program sprawdzajacy przez ktore cwiartki"
+         << "przechodzi prosta y=ax+b \n";
+    cout << "--------------------------------"
+         << "-----------------------------------\n";
+    
+do {
+    cout << "Podaj a: "; cin >> a;
+    cout << "Podaj b: "; cin >> b;
+if ( a < 0 && b > 0 )
+    cout << "Prosta przechodzi przez cwiartke I II i IV\n";
+else if ( b > 0 && a > 0)
+    cout << "Prosta przechodzi przez cwiartke III II i I\n";
+else if ( b == 0 && a > 0)
+    cout << "Prosta przechodzi przez cwiartke III i I\n";
+else if ( b < 0 && a < 0)
+    cout << "Prosta przechodzi przez cwiartke IV III i II\n";
+else if ( a == 0 && b == 0)
+    cout << "Prosta nie przechodzi przez zadna cwiartke\n";
+else if ( a == 0 && b > 0 )
+    cout << "Prosta przechodzi przez cwiartke I i II\n";
+else if ( b == 0 && a  0 )
+    cout << "Prosta przechodzi przez cwiartke II i IV\n";
+else if ( a == 0 && b < 0 )
+    cout << "Prosta przechodzi przez cwiartke III i IV\n";
+else if ( a > 0 && b < 0 )
+    cout << "Prosta przechodzi przez cwiartke I i III oraz IV\n";
+
+else
+    cout << "Atrybut nie obslugiwany - prosimy sprobowac ponownie\n";
+    cout << "-------------------------------------------------------\n";
+    cout << "Chcesz sprobowac ponownie ? Wpisz 1 "; 
+    cin >> wybor;
+}
+while(wybor == 1);
+
+return 0;
+}
