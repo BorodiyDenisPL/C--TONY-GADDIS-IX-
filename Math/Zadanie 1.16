@@ -1,0 +1,57 @@
+// Zadanie 1.16 sprawdzania ilości pierwiastków równania 
+// kwadratowego ax^2+bx+c = 0 dla wczytanych przez użytkownika 
+// wartości a, b, c i sprawdzenia,czy sa oba dodatnie (o ile istnieją).
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int a, b, c, delta;
+    
+     // Aby rozwiązać równanie kwadratowe obliczmany wpierw ∆ (delta):
+     // delta = b² − 4ac
+     
+    cout << "Dodaj wartości a, b, c\n"; 
+    cin >> a >> b >> c;
+    delta = pow(b, 2) - 4 * a * c;
+    
+    // W zależności od wyniku równanie może mieć dwa,
+    // jeden lub zero pierwiastków. 
+    
+    int x0, x1, x2;
+    
+    if (a == 0)
+        cout << "nie jest kwadratowe!";
+        
+    else if (delta > 0)
+    {
+    x1 = ((-b) - sqrt(delta)) / (2 * a);
+    x2 = ((-b) + sqrt(delta)) / (2 * a);
+    cout << "Równanie ma dwa pierwiastki: " << x1 << " i " << x2 << endl;
+        if (x1 > 0 && x2 >0)
+            cout << "są oba dodatnie\n";
+        else
+            cout << "nie są dodatnie\n";
+    }
+    
+    else if (delta == 0)
+    {
+    x0 = -b / (2 * a);
+    cout << "Równanie ma jeden pierwiastek: " << x0 << endl;
+        if (x0 > 0)
+            cout << "jest dodatnie\n";
+        else
+            cout << "nie jest dodatnie\n";
+    }
+    
+    else if (delta < 0)
+        cout << "Równanie ma zero pierwiastków, nie ma rozwiązań.\n";
+    
+    else
+        cout << "Nie poprawny liczby!\n";
+    
+    return 0;
+}
+*/
