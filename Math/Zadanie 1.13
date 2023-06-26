@@ -1,0 +1,33 @@
+// Zadanie 1.13 obliczania wartości x dla danego równania ax + b = 0 
+// (i sprawdzania, czy takie rozwiązanie istnieje- jeśli tak to ile!)
+/*
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    
+    double a, b, x;
+    
+    cout << "Dodaj a i b: ";
+    cin >> a >> b;
+    
+    cout << fixed << showpoint << setprecision(2);
+    if (a != 0)
+    {   
+        x = -b / a;
+        cout << "Wartość x jest " << x;
+    }    
+    else if (a == 0)
+    {
+        if (b == 0)
+            cout << "Równanie tożsamościowe";
+        else 
+            cout << "Równanie sprzeczne";
+    }
+    else
+        cout << "Liczby nie jest poprawny";
+    
+    return 0;
+}
+*/
