@@ -1,0 +1,69 @@
+//Zadanie 1.15 sprawdzania ilości pierwiastków równania
+// kwadratowego ax^2+ bx + c = 0 dla wczytanych przez
+//użytkownika wartości a, b, c i obliczania wartości 
+// pierwiastków (o ile oczywiście istnieją).
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int a, b, c, delta;
+    
+     // Aby rozwiązać równanie kwadratowe obliczmany wpierw ∆ (delta):
+     // delta = b² − 4ac
+     
+    cout << "Dodaj wartości a, b, c\n"; 
+    cin >> a >> b >> c;
+    delta = pow(b, 2) - 4 * a * c;
+    
+    // W zależności od wyniku równanie może mieć dwa,
+    // jeden lub zero pierwiastków. 
+    
+    int x0, x1, x2;
+    
+    if (a == 0)
+        cout << "nie jest kwadratowe!";
+        
+    else if (delta > 0)
+    {
+    x1 = ((-b) - sqrt(delta)) / (2 * a);
+    x2 = ((-b) + sqrt(delta)) / (2 * a);
+    cout << "Równanie ma dwa pierwiastki: " << x1 << " i " << x2 << endl;
+        
+        if (x1 > 0)
+        {
+            x1 = sqrt(x1);
+            cout << "wartość pierwiastka: " << x1 << endl;
+        }
+        else if (x2 > 0)
+        {
+            x2 = sqrt(x2);
+            cout << "wartość pierwiastka: " << x2 << endl;
+        }
+        else
+            cout << "liczba mniejsza niż 0";
+    }
+    else if (delta == 0)
+    {
+    x0 = -b / (2 * a);
+    cout << "Równanie ma jeden pierwiastek: " << x0 << endl;
+    
+        if (x0 > 0)
+        {
+            x0 = sqrt(x0);
+            cout << "wartość pierwiastka: " << x0 << endl;
+        }
+        else
+            cout << "liczba mniejsza niż 0";
+    }
+    else if (delta < 0)
+        cout << "Równanie ma zero pierwiastków, nie ma rozwiązań.\n";
+        
+    else
+        cout << "Nie poprawny liczby!\n";
+    
+    return 0;
+}
+*/
