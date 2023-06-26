@@ -1,0 +1,49 @@
+// Napisz program, który pyta użytkownika o prędkość pojazda (w kilometrach na godzinę)
+// i o to, ile godzin trwał przejazd. Program powinien użyć wtedy pętli do wyświetlenia
+// odleglości, jaką przebył pojazd w każdej godzinie jazdy.
+// Nie akceptuj wartości ujemnej dla prędkości ani wartości niższej niż 1 dla czasu podróży.
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main (){
+    float speed;
+    double odległość;
+    double hours;
+    while (true)
+    {
+        cout << "Podaj prędkość pojazdu ";
+        cout << "(w kilometrach na godzinę): ";
+        cin >> speed;
+        if (speed < 0)
+        {
+            cout << "Wartość nie może być ujemnej\n";
+            continue;
+        }
+        break;
+    }
+     while (true)
+    {
+        cout << "Ile godzin trwał przejazd? ";
+        cin >> hours;
+        if (hours < 1)
+        {
+            cout << "Czas podróży nie może ";
+            cout << "być niższej niż 1\n";
+            continue;
+        }
+        break;
+    }
+    cout << "Godzina      Przebyta odległość\n";
+    cout << " - - - - - - - - - - - - - " << endl;
+  
+    for(int hour = 1; hour <= hours; ++hour)
+    {
+        float distance = speed * hour;
+        cout << left << setw(4);
+        cout << hour << "         " << distance << " km";            
+        cout << endl;
+    }
+    return 0;
+}
