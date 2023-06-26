@@ -1,0 +1,31 @@
+// Napisz program w c++, który obliczy, ile zarobiłaby osoba przez pewien okres,
+// jeśli jej wynagrodzenie wynosiłoby 1 grosz za pierwszy dzień pracy, dwa grosze
+// za drugi dzień i podwajałoby się każdego kolejnego dnia. Program powinien zaputać
+// użytkownika o liczbę dni. Wyświetl tabelę prezentującą, ile wynosiło wynagrodzenie
+// każdego dnia, a następnie pokaż sumę płac po zakończeniu danego okresu. 
+// Wynik powinien zostać wyświetlony w zlotówkach, a nie w groszach.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int liczbaDni;
+    double zarobek = 0.01;
+    double sum;
+
+    cout << "Podaj liczbę dni: ";
+    cin >> liczbaDni;
+
+    cout << "Dzień\tWynagrodzenie" << endl;
+    cout << "-------------------" << endl;
+
+    for (int dzien = 1; dzien <= liczbaDni; dzien++) {
+        cout << dzien << "\t" << zarobek << " zł" << endl;
+        sum += zarobek;
+        zarobek *= 2; 
+    }
+    cout << "-------------------" << endl;
+    cout << "Suma płac: " << sum << " zł" << endl;
+    
+    return 0;
+}
