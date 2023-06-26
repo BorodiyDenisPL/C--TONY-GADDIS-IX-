@@ -1,0 +1,28 @@
+/*        
+// <fstream>
+// ofstream outputFile
+// ifstream inputFile
+// Ten program odczytuje dane z pliku.
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream inputFile;
+    ofstream outputFile;
+    outputFile.open("SpisLiczb.txt");
+    int number;
+
+    inputFile.open("SpisLiczb.txt");
+    outputFile << 100 << endl;
+    outputFile << 100 << endl;
+    outputFile << 100 << endl;
+    outputFile << 100 << endl;
+    while (inputFile >> number) 
+    {
+        cout << number << endl;
+    }
+    inputFile.close();
+    return 0;
+}
+*/
